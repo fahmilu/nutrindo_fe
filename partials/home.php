@@ -103,5 +103,6 @@
     </section>
     <?php include("components/home/product-validation.php"); ?>
     <?php include("components/home/faq.php"); ?>
+    <?php include("components/home/news.php"); ?>
 </div>
 <!-- end of home section -->

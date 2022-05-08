@@ -6,7 +6,7 @@
 		font-size: 1rem;
 		text-align: center;
 		border: 1px solid $dark-pink;
-		@include border-radius(16px);
+		@include border-radius(8px);
 		background-color: $dark-pink;
 		@include animation(.25s);
 		cursor: pointer;

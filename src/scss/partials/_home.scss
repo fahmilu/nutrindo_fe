@@ -5,7 +5,6 @@
     @include image-background('../images/bg/hero-product.jpg');
     padding-top: 120px !important;
     padding-bottom: 120px;
-
     @include breakpoint(min-height 850px) {
         min-height: 0;
         height: 850px;
@@ -272,9 +271,14 @@
                         .slick-slide {
                             margin: 0 15px;
                             height: inherit !important;
+                            padding-bottom: 23px;
                             
                             > div {
                                 height: 100%;
+
+                                > div {
+                                    height: 100%;
+                                }
                             }
                         }
                     }
@@ -290,7 +294,7 @@
                 border-radius: 6px;
                 padding: 20px;
                 @include image-background('/');
-
+                
                 h3,
                 p {
                     color: $dark-pink;

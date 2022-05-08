@@ -1,5 +1,30 @@
 // header
 header{
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+
+    &.scrolling {
+        .navbar {
+            background-color: white;
+        }
+    }
+
+    &[data-scroll="up"],
+    &[data-scroll="down"] {
+        position: fixed;
+        @include animation(.25s);
+    }
+
+    &[data-scroll="up"] {
+        transform: translateY(0%);
+    }
+
+    &[data-scroll="down"] {
+        transform: translateY(-100%);
+    }
+
     .navbar {
         .container {
             position: relative;

@@ -74,21 +74,27 @@
                 </div>
                 <div>
                     <div class="products">
-                        <a href="" class="d-block" style="background-image: url('assets/images/products/bg-product-1.png');">
-                            <h3>Wellness Formula Minyak Ikan</h3>
-                            <img src="assets/images/products/dummy-1.png" alt="" />
-                            <p>Omega-3 berkualitas tinggi dengan segudang manfaat untuk mendukung kesehatan dan fungsi tubuh Anda secara keseluruhan.</p>
-                        </a>
-                        <a href="" class="d-block" style="background-image: url('assets/images/products/bg-product-2.png');">
-                            <h3>Wellness Formula Multivitamin & Mineral</h3>
-                            <img src="assets/images/products/dummy-2.png" alt="" />
-                            <p>Solusi lengkap untuk memenuhi kebutuhan multivitamin harian atau dosis tinggi Anda.</p>
-                        </a>
-                        <a href="" class="d-block" style="background-image: url('assets/images/products/bg-product-3.png');">
-                            <h3>Wellness Formula untuk Perempuan</h3>
-                            <img src="assets/images/products/dummy-3.png" alt="" />
-                            <p>Suplemen bermutu tinggi untuk mendukung kesehatan dan kecantikan perempuan.</p>
-                        </a>
+                        <div>
+                            <a href="" class="d-block" style="background-image: url('assets/images/products/bg-product-1.png');">
+                                <h3>Wellness Formula Minyak Ikan</h3>
+                                <img src="assets/images/products/dummy-1.png" alt="" />
+                                <p>Omega-3 berkualitas tinggi dengan segudang manfaat untuk mendukung kesehatan dan fungsi tubuh Anda secara keseluruhan.</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="" class="d-block" style="background-image: url('assets/images/products/bg-product-2.png');">
+                                <h3>Wellness Formula Multivitamin & Mineral</h3>
+                                <img src="assets/images/products/dummy-2.png" alt="" />
+                                <p>Solusi lengkap untuk memenuhi kebutuhan multivitamin harian atau dosis tinggi Anda.</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="" class="d-block" style="background-image: url('assets/images/products/bg-product-3.png');">
+                                <h3>Wellness Formula untuk Perempuan</h3>
+                                <img src="assets/images/products/dummy-3.png" alt="" />
+                                <p>Suplemen bermutu tinggi untuk mendukung kesehatan dan kecantikan perempuan.</p>
+                            </a>
+                        </div>
                     </div>
                     <div class="actions"></div>
                 </div>

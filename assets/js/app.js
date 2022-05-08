@@ -3216,14 +3216,54 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-__webpack_require__(/*! ../js/home.js */ "./src/js/home.js");
+__webpack_require__(/*! ./partials/global.js */ "./src/js/partials/global.js");
+
+__webpack_require__(/*! ./partials/home.js */ "./src/js/partials/home.js");
 
 /***/ }),
 
-/***/ "./src/js/home.js":
-/*!************************!*\
-  !*** ./src/js/home.js ***!
-  \************************/
+/***/ "./src/js/partials/global.js":
+/*!***********************************!*\
+  !*** ./src/js/partials/global.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+
+var $win = jquery__WEBPACK_IMPORTED_MODULE_0___default()(window),
+    $header = jquery__WEBPACK_IMPORTED_MODULE_0___default()('header');
+var $lastScrollTop = 0; // scroll top
+
+document.addEventListener("DOMContentLoaded", function () {
+  $win.scroll(function () {
+    var $scrollTop = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).scrollTop();
+    var $headerHeight = $header.height();
+
+    if ($scrollTop > $headerHeight) {
+      if ($scrollTop > $lastScrollTop) {
+        $header.attr('data-scroll', 'down');
+      } else {
+        $header.attr('data-scroll', 'up');
+      }
+
+      $header.addClass('scrolling');
+    } else {
+      $header.removeClass('scrolling');
+    }
+
+    $lastScrollTop = $scrollTop;
+  });
+});
+
+/***/ }),
+
+/***/ "./src/js/partials/home.js":
+/*!*********************************!*\
+  !*** ./src/js/partials/home.js ***!
+  \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -3390,10 +3430,32 @@ document.addEventListener("DOMContentLoaded", function () {
     nextArrow: '<a href="#" class="slick-next">next</a>',
     prevArrow: '<a href="#" class="slick-prev">prev</a>'
   });
-}); // product carousel
+});
+
+var productCarouselWidth = function productCarouselWidth() {
+  var $containerW = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#home-sections .product-carousel .container').width();
+  var $winW = jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).width();
+  var gap = 0;
+
+  if ($winW > $containerW) {
+    gap = ($winW - $containerW) / 2;
+  }
+
+  return gap;
+}; // product carousel
+
 
 document.addEventListener("DOMContentLoaded", function () {
   var $promoSlider = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#home-sections .product-carousel .products');
+  $promoSlider.css({
+    'width': 'calc(100% + ' + productCarouselWidth() + 'px)'
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).resize(function () {
+    $promoSlider.css({
+      'width': 'calc(100% + ' + productCarouselWidth() + 'px)'
+    });
+    $promoSlider.slick('refresh');
+  });
   $promoSlider.slick({
     arrows: true,
     dots: false,

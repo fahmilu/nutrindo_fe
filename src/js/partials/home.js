@@ -180,9 +180,33 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
+const productCarouselWidth = () => {
+    const $containerW = $('#home-sections .product-carousel .container').width();
+    const $winW = $(window).width();
+    let gap = 0;
+
+    if($winW > $containerW) {
+        gap = ($winW - $containerW) / 2;
+    }
+
+    return gap;
+}
+
 // product carousel
 document.addEventListener("DOMContentLoaded", function() {
     const $promoSlider = $('#home-sections .product-carousel .products');
+
+    $promoSlider.css({
+        'width': 'calc(100% + ' + productCarouselWidth() + 'px)'
+    });
+
+    $(window).resize(function () { 
+        $promoSlider.css({
+            'width': 'calc(100% + ' + productCarouselWidth() + 'px)'
+        });
+        
+        $promoSlider.slick('refresh');
+    });
 
     $promoSlider.slick({
         arrows: true,

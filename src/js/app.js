@@ -1,4 +1,5 @@
 import 'bootstrap';
 import 'slick-carousel';
 
-require('../js/home.js');
+require('./partials/global.js');
+require('./partials/home.js');

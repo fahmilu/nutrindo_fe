@@ -11567,6 +11567,25 @@ a {
   color: #BE2B64;
 }
 
+header {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+}
+header.scrolling .navbar {
+  background-color: white;
+}
+header[data-scroll=up], header[data-scroll=down] {
+  position: fixed;
+  transition: all ease-in-out 0.25s;
+}
+header[data-scroll=up] {
+  transform: translateY(0%);
+}
+header[data-scroll=down] {
+  transform: translateY(-100%);
+}
 header .navbar .container {
   position: relative;
 }
@@ -11901,8 +11920,12 @@ header .navbar .container .search button {
 .product-carousel .container > div > div:last-child .slick-track .slick-slide {
   margin: 0 15px;
   height: inherit !important;
+  padding-bottom: 23px;
 }
 .product-carousel .container > div > div:last-child .slick-track .slick-slide > div {
+  height: 100%;
+}
+.product-carousel .container > div > div:last-child .slick-track .slick-slide > div > div {
   height: 100%;
 }
 .product-carousel .container .products a {

@@ -101,5 +101,7 @@
             </div>
         </div>
     </section>
+    <?php include("components/home/product-validation.php"); ?>
+    <?php include("components/home/faq.php"); ?>
 </div>
 <!-- end of home section -->

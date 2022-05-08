@@ -1,0 +1,65 @@
+// text component
+h1 {
+	&.lighter {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 5.3333rem;
+		line-height: 4.4444rem;
+		letter-spacing: -0.022em;
+		color: black;
+	}
+
+	font-weight: 900;
+	font-size: 3.5556rem;
+	line-height: 4.4444rem;
+	letter-spacing: -0.022em;
+
+}
+
+h2 {
+	font-weight: 400;
+	font-size: 2rem;
+	line-height: 2.3333rem;
+	letter-spacing: -0.021em;
+}
+
+h3 {
+	font-weight: 400;
+	font-size: 1.3333rem;
+	line-height: 1.8889rem;
+	/* identical to box height, or 142% */
+	
+	letter-spacing: -0.019em;
+}
+
+h4 {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.3889rem;
+	letter-spacing: -0.014em;
+
+}
+
+h5 {
+	font-weight: 300;
+	font-size: .7778rem;
+	line-height: 1.1111rem;	
+	letter-spacing: -0.017em;
+	
+}
+
+p {
+	font-style: normal;
+	font-weight: 300;
+	font-size: 1rem;
+	line-height: 1.3889rem;
+	letter-spacing: -0.014em;
+
+	color: $dark;
+}
+
+.text-dark-pink {
+	color: $dark-pink;
+}
+// end of text

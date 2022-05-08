@@ -1,0 +1,35 @@
+// button component
+.btn-area{
+	button,
+	a{
+		padding: 8px 16px;
+		font-size: 1rem;
+		text-align: center;
+		border: 1px solid $dark-pink;
+		@include border-radius(16px);
+		background-color: $dark-pink;
+		@include animation(.25s);
+		cursor: pointer;
+		color: #fff;
+		&.red{
+			background: #f6343f;
+		}		
+		&.green{
+			background: #8ba332;
+		}
+		&:hover{
+			background-color: $dark-pink;
+			text-decoration: none;
+		}
+		&.transparent {
+			background-color: transparent;
+			color: $dark-pink; 
+
+			&:hover {
+				background-color: $dark-pink;
+				color: $white;
+			}
+		}
+	}
+}
+// end of button

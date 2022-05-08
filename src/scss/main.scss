@@ -1,0 +1,17 @@
+// themes: nutrindo
+// based library
+@import "~bootstrap/scss/bootstrap";
+@import "~breakpoint-sass/stylesheets/breakpoint";
+@import "~slick-carousel/slick/slick";
+
+// custom style
+@import 'component/reset';
+@import 'component/variable';
+@import 'component/function';
+@import 'component/text';
+@import 'component/button';
+@import 'component/global';
+@import 'partials/header';
+@import 'partials/footer';
+
+@import 'partials/home';

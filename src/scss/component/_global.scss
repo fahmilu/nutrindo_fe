@@ -19,7 +19,7 @@ section{
 }
 
 #content{
-	overflow-x: hidden;
+	// overflow-x: hidden;
 	position: relative;
 	
 	> div section:first-of-type {
@@ -42,7 +42,11 @@ a{
 	max-width: 1440px;
 
 	@include breakpoint(768px) {
-		padding: 0px 20px; 
+		padding: 0px 40px; 
+	}
+
+	@include breakpoint(1280px) {
+		padding: 0px 80px; 
 	}
 }
 
@@ -106,4 +110,72 @@ a{
 		}
 	}
 
+}
+
+.breadcumbs {
+	display: flex;
+
+	> * {
+		display: block;
+		margin-right: 8px;
+		color: $dark-pink !important;
+		
+
+
+		&.active {
+			font-weight: 700;
+		}
+	} 
+	
+	a:hover {
+		text-decoration: underline;
+	}
+}
+
+.pagination {
+	margin-top: 80px;
+
+	.page-item {
+		padding: 8px;
+		margin: 0 5px;
+
+		a.page-link {
+			color: $dark-pink;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 22px;
+			padding: 0;
+			background: none;
+			border: none;
+
+			&.prev,
+			&.next {
+				@include watermark("../images/icons/prev.svg", 30px, 30px);
+				font-size: 0;
+				background-size: 16px auto !important;
+			}
+
+			&.next {
+				@include image-background("../images/icons/next.svg");
+			}
+
+		}
+
+		&.active {
+			position: relative;
+			padding: 8px 16px;
+
+			&:before {
+				z-index: -1;
+				@include befaft-abs(30px, 30px, 0, 0);
+				@include center-abs;
+				background-color: $dark-pink;
+				border-radius: 50%;
+			}
+
+			a.page-link {
+				color: white;
+			}
+		}
+	}
 }

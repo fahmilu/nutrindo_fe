@@ -9,19 +9,19 @@
             <div class="collapse navbar-collapse justify-content-md-between" id="collapsibleNavId">
                 <ul class="navbar-nav mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Tentang Kami</a>
+                        <a class="nav-link" href="?page=about">Tentang Kami</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Produk</a>
+                        <a class="nav-link" href="?page=products">Produk</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Periksa Keaslian</a>
+                        <a class="nav-link" href="?page=validation">Periksa Keaslian</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Berita</a>
+                        <a class="nav-link" href="?page=news">Berita</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Belanja</a>
+                        <a class="nav-link" href="?page=shop">Belanja</a>
                     </li>
                 </ul>
                 <a href="#"><img src="assets/images/logo.svg" alt="logo" srcset="assets/images/logo.png" class="logo d-block"></a>

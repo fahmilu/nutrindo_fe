@@ -9,7 +9,7 @@ h1 {
 		color: black;
 	}
 
-	font-weight: 900;
+	font-weight: 800;
 	font-size: 3.5556rem;
 	line-height: 4.4444rem;
 	letter-spacing: -0.022em;
@@ -42,7 +42,7 @@ h4 {
 }
 
 h5 {
-	font-weight: 300;
+	font-weight: 400;
 	font-size: .7778rem;
 	line-height: 1.1111rem;	
 	letter-spacing: -0.017em;
@@ -66,4 +66,9 @@ p {
 .text-dark-pink {
 	color: $dark-pink;
 }
+
+.text-medium {
+	font-weight: 500;
+}
+
 // end of text

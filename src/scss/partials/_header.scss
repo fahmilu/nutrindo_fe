@@ -14,11 +14,11 @@ header{
     &[data-scroll="up"],
     &[data-scroll="down"] {
         position: fixed;
-        @include animation(.25s);
     }
 
     &[data-scroll="up"] {
         transform: translateY(0%);
+        @include animation(.25s);
     }
 
     &[data-scroll="down"] {

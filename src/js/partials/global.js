@@ -20,6 +20,8 @@ document.addEventListener("DOMContentLoaded", function() {
             $header.addClass('scrolling');
         } else {
             $header.removeClass('scrolling');
+            $header.attr('data-scroll', '');
+
         }
 
         $lastScrollTop = $scrollTop;

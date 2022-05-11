@@ -16,7 +16,11 @@
 <body>
     <?php include("partials/header.php");?>
     <div id="content">
-        <?php include("partials/home.php");?>
+        <?php if(!isset($_GET['page'])) : ?>
+        <?php include("partials/home.php"); ?>
+        <?php else: ?>
+            <?php include("partials/". $_GET['page'] .".php"); ?>
+        <?php endif ?>
     </div>
     <?php include("partials/footer.php");?>
     <script src="assets/js/app.js"></script>

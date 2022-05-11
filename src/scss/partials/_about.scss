@@ -1,0 +1,80 @@
+#about-sections {
+    .title {
+        .container {
+            padding-top: 80px;
+            padding-bottom: 30px;
+        }
+    }
+
+    .container {
+        max-width: 1140px;
+
+        .gap-100 {
+            gap: 100px;
+        }
+
+        h1 {
+            font-weight: 900;
+            font-size: 2.2222rem;
+            line-height: 56px;
+        }
+
+        h3 {
+            font-weight: 600;
+            font-size: 1.7778rem;
+            line-height: 2.3333rem;
+            margin-bottom: 50px;
+        }
+
+        .img-rounded {
+            @include create-circle(460px);
+            display: block;
+            position: relative;
+            overflow: hidden;
+
+            img {
+                @include center-abs;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+    }
+
+    .about-us {
+        background: #FCF7FA;
+        position: relative;
+        padding: 50px 0;
+
+        &::before,
+        &:not(.without-after)::after {
+            @include befaft-abs(100%, 116px, 0, 0);
+            @include image-background('../images/bg-about-top.svg');
+            z-index: -1;
+        }
+        
+        &::before {
+            transform: translateY(-100%);
+        }
+
+        &:not(.without-after)::after {
+            top: unset;
+            bottom: 0;
+            @include image-background('../images/bg-about-bottom.svg');
+            background-color: #FCF7FA;
+            z-index: 0;
+            transform: translateY(100%);
+        }
+    }
+
+    .manufacture {
+        .gap-80 {
+            gap: 80px;
+        }
+
+        .container {
+            padding: 90px 0 130px;
+        }
+    }
+}

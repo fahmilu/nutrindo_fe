@@ -1,0 +1,144 @@
+.testimonial {
+    background: #FCF7FA;
+    padding: 80px 0 78px;
+    position: relative;
+
+    .container {
+        &::before {
+            @include befaft-abs(176px, 149px, -20px, unset);
+            right: -40px;
+            @include image-background('../images/icons/quote-mark.svg');
+        }
+    }
+    .slick {
+        &-list {
+            margin: 0 -12px;
+        }
+    
+        &-slide {
+            margin: 0 12px;
+        }
+
+        &-prev,
+        &-next {
+            background-color: unset;
+            border: none;
+            z-index: 1;
+            @include watermark("../images/icons/prev.svg", 40px, 40px);
+            font-size: 0;
+            background-size: 32% auto !important;
+            @include vertical-center-abs;
+            left: -60px;
+            @include breakpoint(1280px) {
+                width: 48px;
+                height: 48px;
+            }
+        }
+
+        &-next {
+            left: unset;
+            right: -60px;
+            @include image-background("../images/icons/next.svg");
+        }
+
+        &-dots {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            @include horizontal-center-abs;
+            margin-top: 20px;
+            li {
+                margin: 0 5px;
+            }
+
+            li > button {
+                border: 1px solid $dark-pink;
+                font-size: 0;
+                @include create-circle(10px);
+                padding: 0;
+                margin: 0;
+                background-color: transparent;
+                display: block;
+            }
+
+            .slick-active > button {
+                background-color: $dark-pink;
+            }
+        }
+    }
+
+    .message {
+        width: 100%;
+        height: 220px;
+        border: 1px solid $dark-pink;
+        background: white;
+        position: relative;
+        box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+        border-radius: 10px;
+        padding: 32px;
+        margin-bottom: 20px;
+
+        .content {
+            text-align: center;
+            overflow: auto;
+            height: 100%;
+
+        }
+        &:before {
+            content: "";
+            @include horizontal-center-abs;
+            top: 100%;
+            width: 0;
+            border-top: 14px solid $dark-pink;
+            border-left: 14px solid transparent;
+            border-right: 14px solid transparent;
+        }
+
+        &:after {
+            content: "";
+            @include horizontal-center-abs;
+            position: absolute;
+            top: 100%;
+            width: 0;
+            border-top: 12px solid white;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+        }
+    }
+
+    .name {
+        color: $dark-pink;
+        text-align: center;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 8px;
+    }
+
+    .ratings {
+        display: flex;
+        justify-content: center;
+        gap: 4px;
+
+        .star {
+            height: 28px;
+            width: 28px;
+            background: url(../images/icons/star-unfill.svg);
+            background-size: auto 100%;
+            background-position: left center;
+            position: relative;
+
+            .fill {
+                width: calc(28px * var(--star-width));
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: url(../images/icons/star.svg);
+                background-size: auto 100%;
+                background-position: left center;
+            }
+        }
+    }
+}

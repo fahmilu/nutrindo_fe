@@ -3220,6 +3220,43 @@ __webpack_require__(/*! ./partials/global.js */ "./src/js/partials/global.js");
 
 __webpack_require__(/*! ./partials/home.js */ "./src/js/partials/home.js");
 
+__webpack_require__(/*! ./components/testimonial.js */ "./src/js/components/testimonial.js");
+
+/***/ }),
+
+/***/ "./src/js/components/testimonial.js":
+/*!******************************************!*\
+  !*** ./src/js/components/testimonial.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+
+var $sliderTestimonial = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.slider-testimonial');
+document.addEventListener("DOMContentLoaded", function () {
+  $sliderTestimonial.slick({
+    dots: true,
+    slidesToShow: 2,
+    slidesToScroll: 1
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.slider-testimonial .ratings').each(function (index, element) {
+    var $dataRating = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).data('rating');
+    var $dataRatingFloor = Math.floor($dataRating);
+
+    for (var i = 0; i < $dataRatingFloor; i++) {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).append('<div class="star"><div class="fill" style="--star-width: 1;"></div></div>');
+    }
+
+    if ($dataRatingFloor !== $dataRating) {
+      var $restStar = $dataRating - $dataRatingFloor;
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).append('<div class="star"><div class="fill" style="--star-width: ' + $restStar + ';"></div></div>');
+    }
+  });
+});
+
 /***/ }),
 
 /***/ "./src/js/partials/global.js":
@@ -3252,6 +3289,7 @@ document.addEventListener("DOMContentLoaded", function () {
       $header.addClass('scrolling');
     } else {
       $header.removeClass('scrolling');
+      $header.attr('data-scroll', '');
     }
 
     $lastScrollTop = $scrollTop;

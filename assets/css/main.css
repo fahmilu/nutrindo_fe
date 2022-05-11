@@ -11455,11 +11455,14 @@ h5, .h5 {
 
 p {
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1rem;
   line-height: 1.3889rem;
   letter-spacing: -0.014em;
   color: #505050;
+}
+p:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .text-dark-pink {
@@ -11527,7 +11530,7 @@ section {
   overflow-x: hidden;
   position: relative;
 }
-#content > section:first-of-type {
+#content > div section:first-of-type {
   padding-top: 72px;
 }
 
@@ -11616,6 +11619,159 @@ a {
   line-height: 17px;
 }
 
+.testimonial {
+  background: #FCF7FA;
+  padding: 80px 0 78px;
+  position: relative;
+}
+.testimonial .container::before {
+  content: "";
+  position: absolute;
+  width: 176px;
+  height: 149px;
+  top: -20px;
+  left: unset;
+  right: -40px;
+  background-image: url("../images/icons/quote-mark.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.testimonial .slick-list {
+  margin: 0 -12px;
+}
+.testimonial .slick-slide {
+  margin: 0 12px;
+}
+.testimonial .slick-prev, .testimonial .slick-next {
+  background-color: unset;
+  border: none;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/icons/prev.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 0;
+  background-size: 32% auto !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -60px;
+}
+@media (min-width: 1280px) {
+  .testimonial .slick-prev, .testimonial .slick-next {
+    width: 48px;
+    height: 48px;
+  }
+}
+.testimonial .slick-next {
+  left: unset;
+  right: -60px;
+  background-image: url("../images/icons/next.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.testimonial .slick-dots {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+}
+.testimonial .slick-dots li {
+  margin: 0 5px;
+}
+.testimonial .slick-dots li > button {
+  border: 1px solid #BE2B64;
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  display: block;
+}
+.testimonial .slick-dots .slick-active > button {
+  background-color: #BE2B64;
+}
+.testimonial .message {
+  width: 100%;
+  height: 220px;
+  border: 1px solid #BE2B64;
+  background: white;
+  position: relative;
+  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+  border-radius: 10px;
+  padding: 32px;
+  margin-bottom: 20px;
+}
+.testimonial .message .content {
+  text-align: center;
+  overflow: auto;
+  height: 100%;
+}
+.testimonial .message:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+  width: 0;
+  border-top: 14px solid #BE2B64;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+}
+.testimonial .message:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  top: 100%;
+  width: 0;
+  border-top: 12px solid white;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+}
+.testimonial .name {
+  color: #BE2B64;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 8px;
+}
+.testimonial .ratings {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+.testimonial .ratings .star {
+  height: 28px;
+  width: 28px;
+  background: url(../images/icons/star-unfill.svg);
+  background-size: auto 100%;
+  background-position: left center;
+  position: relative;
+}
+.testimonial .ratings .star .fill {
+  width: calc(28px * var(--star-width));
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../images/icons/star.svg);
+  background-size: auto 100%;
+  background-position: left center;
+}
+
 header {
   position: absolute;
   top: 0;
@@ -11627,10 +11783,10 @@ header.scrolling .navbar {
 }
 header[data-scroll=up], header[data-scroll=down] {
   position: fixed;
-  transition: all ease-in-out 0.25s;
 }
 header[data-scroll=up] {
   transform: translateY(0%);
+  transition: all ease-in-out 0.25s;
 }
 header[data-scroll=down] {
   transform: translateY(-100%);
@@ -12278,4 +12434,82 @@ footer .container .content .footer .social-media a img {
     padding-left: 35px;
     padding-right: 35px;
   }
+}
+
+#about-sections .title .container {
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+#about-sections .container {
+  max-width: 1140px;
+}
+#about-sections .container .gap-100 {
+  gap: 100px;
+}
+#about-sections .container h1, #about-sections .container .h1 {
+  font-weight: 900;
+  font-size: 2.2222rem;
+  line-height: 56px;
+}
+#about-sections .container h3, #about-sections .container .h3 {
+  font-weight: 600;
+  font-size: 1.7778rem;
+  line-height: 2.3333rem;
+  margin-bottom: 50px;
+}
+#about-sections .container .img-rounded {
+  width: 460px;
+  height: 460px;
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+#about-sections .container .img-rounded img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+#about-sections .about-us {
+  background: #FCF7FA;
+  position: relative;
+  padding: 50px 0;
+}
+#about-sections .about-us::before, #about-sections .about-us:not(.without-after)::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 116px;
+  top: 0;
+  left: 0;
+  background-image: url("../images/bg-about-top.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+#about-sections .about-us::before {
+  transform: translateY(-100%);
+}
+#about-sections .about-us:not(.without-after)::after {
+  top: unset;
+  bottom: 0;
+  background-image: url("../images/bg-about-bottom.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #FCF7FA;
+  z-index: 0;
+  transform: translateY(100%);
+}
+#about-sections .manufacture .gap-80 {
+  gap: 80px;
+}
+#about-sections .manufacture .container {
+  padding: 90px 0 130px;
 }

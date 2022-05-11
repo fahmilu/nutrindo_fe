@@ -3220,6 +3220,8 @@ __webpack_require__(/*! ./partials/global.js */ "./src/js/partials/global.js");
 
 __webpack_require__(/*! ./partials/home.js */ "./src/js/partials/home.js");
 
+__webpack_require__(/*! ./partials/shop.js */ "./src/js/partials/shop.js");
+
 __webpack_require__(/*! ./components/testimonial.js */ "./src/js/components/testimonial.js");
 
 /***/ }),
@@ -3502,6 +3504,48 @@ document.addEventListener("DOMContentLoaded", function () {
     prevArrow: '<a href="#" class="slick-prev">prev</a>',
     // infinite: false,
     variableWidth: true
+  });
+});
+
+/***/ }),
+
+/***/ "./src/js/partials/shop.js":
+/*!*********************************!*\
+  !*** ./src/js/partials/shop.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+
+
+var updateStoreList = function updateStoreList() {
+  var div = document.querySelector('#shop-sections .offline-store a.active');
+  console.log(div);
+
+  if (div !== null) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#shop-sections .empty-list').hide();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#shop-sections .store-list').show();
+  } else {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#shop-sections .empty-list').show();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#shop-sections .store-list').hide();
+  }
+};
+
+document.addEventListener("DOMContentLoaded", function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('body').on('click', '#shop-sections .offline-store a', function (e) {
+    e.preventDefault();
+
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).hasClass('active')) {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('#shop-sections .offline-store a').removeClass('active');
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('#shop-sections .offline-store a').removeClass('active');
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).addClass('active');
+    }
+
+    updateStoreList();
   });
 });
 

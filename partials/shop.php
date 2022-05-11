@@ -66,14 +66,24 @@
             <div class="empty-list">
                 Daftar kosong
             </div>
-            <div class="store-list">
-                <div class="d-flex justify-content-end align-items-center">
+            <div class="store-list" style="display: none;">
+                <div class="d-flex justify-content-end align-items-center search-and-filter">
                     <form action="" class="search">
                         <button type="submit">search</button>
                         <input type="text" name="search" placeholder="Cari" />
                     </form>
                     <a href="" class="sort">sort</a>
-                    <a href="" class="filter">filter</a>
+                    <div class="dropdown">
+                        <a href="" class="filter dropdown-toggle" type="button" id="filteDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">filter</a>
+     
+                        <div class="dropdown-menu" aria-labelledby="filteDropdown">
+                            <a class="dropdown-item text-dark-pink" href="#">Kalimantan</a>
+                            <a class="dropdown-item text-dark-pink" href="#">Sumatera</a>
+                            <a class="dropdown-item text-dark-pink" href="#">Papua</a>
+                            <a class="dropdown-item text-dark-pink" href="#">Jawa Timur</a>
+                            <a class="dropdown-item text-dark-pink" href="#">Jawa Tengah</a>
+                        </div>
+                    </div>
                 </div>
                 <table class="table">
                     <thead>

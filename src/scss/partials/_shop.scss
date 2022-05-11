@@ -65,6 +65,7 @@
                     overflow: hidden;
                     position: relative;
 
+                    &.active,
                     &:hover {
                         border-width: 2px;
                     }
@@ -97,7 +98,7 @@
 
         .empty-list {
             text-align: center;
-            padding: 72px 0 46px;
+            padding: 72px 0 0;
             font-weight: 600;
             font-size: 24px;
             line-height: 34px;
@@ -107,55 +108,7 @@
         }
 
         .store-list {
-            .sort,
-            .filter {
-                @include watermark('../images/icons/sort.svg', 36px, 36px);
-                margin-left: .8889rem;
-                display: block;
-                font-size: 0;
-            }
-
-            .filter {
-                @include image-background('../images/icons/filter.svg');
-            }
-            form {
-                &.search {
-                    border: 2px solid $dark-pink;
-                    border-radius: 8px;
-                    box-sizing: border-box;
-                    width: 340px;
-                    padding: 10px 16px 10px 10px;
-                    display: flex;
-                    align-items: center;
-    
-                    input {
-                        padding: 0;
-                        border: none;
-                        background: none;
-                        font-family: 'Lato', sans-serif;
-                        font-weight: 400;
-                        font-size: 18px;
-                        line-height: 25px;
-                        letter-spacing: -0.014em;
-                        outline: none !important;
-                        box-shadow: none !important;
-                        width: 100%;
-                        color: $dark-pink;
-
-                        &::placeholder {
-                            color: #9098B1;
-                        }
-                    }
-    
-                    button {
-                        @include watermark('../images/icons/search.svg', 25px, 25px);
-                        background-color: unset;
-                        margin-right: 10px;
-                        font-size: 0;
-                        border: none;
-                    }
-                }
-            }
+            padding: 72px 0 46px;
         }
         .table {
             border: 3px solid #BE2B64;

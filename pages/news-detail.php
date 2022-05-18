@@ -1,7 +1,7 @@
 <div id="news-sections">
     <section class="news-detail">
         <div class="container">
-        <div class="breadcumbs d-flex">
+        <div class="breadcrumbs d-flex">
                 <a href="/">Kecantikan</a>
                 <span>></span>
                 <span class="active">Haruskah saya perawatan wajah?</span>
@@ -63,5 +63,5 @@
             </div>
         </div>
     </section>
-    <section class="news-leafs"></section>
+    <section class="bottom-leafs"></section>
 </div>

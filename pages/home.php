@@ -48,7 +48,7 @@
                     <div class="actions"></div>
                 </div>
                 <div class="btn-area">
-                    <a href="" target="_blank" class="transparent text-uppercase">diskusi dengan kami</a>
+                    <a href="?page=contact-us" target="_blank" class="transparent text-uppercase">diskusi dengan kami</a>
                 </div>
             </div>
         </div>

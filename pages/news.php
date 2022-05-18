@@ -1,7 +1,7 @@
 <div id="news-sections">
     <section class="news-banner">
         <div class="container">
-            <div class="breadcumbs d-flex">
+            <div class="breadcrumbs d-flex">
                 <a href="/">Beranda</a>
                 <span>></span>
                 <span class="active">Berita</span>
@@ -169,5 +169,5 @@
             </div>
         </div>
     </section>
-    <section class="news-leafs"></section>
+    <section class="bottom-leafs"></section>
 </div> 

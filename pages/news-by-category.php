@@ -1,7 +1,7 @@
 <div id="news-sections">
     <section class="news-banner">
         <div class="container">
-            <div class="breadcumbs d-flex">
+            <div class="breadcrumbs d-flex">
                 <a href="/">Beranda</a>
                 <span>></span>
                 <a href="/">Berita</a>
@@ -55,5 +55,5 @@
     <div class="btn-area text-center mt-5">
         <a href="">Tampilkan Lebih banyak</a>
     </div>
-    <section class="news-leafs"></section>
+    <section class="bottom-leafs"></section>
 </div> 

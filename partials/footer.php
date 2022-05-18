@@ -28,10 +28,10 @@
                 <h3>Hukum</h3>
                 <div class="links">
                     <div>
-                        <a href="?page=">Kebijakan Privasi</a>
+                        <a href="?page=privacy-policy">Kebijakan Privasi</a>
                     </div>
                     <div>
-                        <a href="?page=">Kebijakan Penggunaan</a>
+                        <a href="?page=terms-of-use">Kebijakan Penggunaan</a>
                     </div>
                 </div>
             </div>

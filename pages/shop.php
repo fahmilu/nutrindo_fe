@@ -2,7 +2,7 @@
 <div id="shop-sections">
     <section class="where-to-buy">
         <div class="container">
-            <div class="breadcumbs d-flex">
+            <div class="breadcrumbs d-flex">
                 <a href="/">Beranda</a>
                 <span>></span>
                 <span class="active">Belanja</span>

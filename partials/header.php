@@ -26,9 +26,10 @@
                 </ul>
                 <a href="/"><img src="assets/images/logo.svg" alt="logo" srcset="assets/images/logo.png" class="logo d-block"></a>
                 <div class="d-flex align-items-center">
-                    <form class="d-flex search">
-                        <input class="form-control me-sm-2" type="text" placeholder="Mau cari apa?">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <form class="d-flex search" action="/" method="get">
+                        <input type="hidden" name="page" value="search" />
+                        <input class="form-control me-sm-2" name="q" type="text" placeholder="Mau cari apa?">
+                        <button class="btn my-2 my-sm-0" type="submit">Search</button>
                     </form>
                     <div class="change-language d-flex">
                         <a class="nav-link" href="#">EN</a>

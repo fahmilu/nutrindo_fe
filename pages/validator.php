@@ -1,7 +1,7 @@
 <div id="validator-sections">
     <section class="product-validator">
         <div class="container">
-            <div class="breadcumbs d-flex">
+            <div class="breadcrumbs d-flex">
                 <a href="/">Beranda</a>
                 <span>></span>
                 <span class="active">Periksa Keaslian</span>

@@ -122,26 +122,10 @@
             }
         }
 
-        &-leafs {
-            height: 412px;
-
-            &::before {
-                @include befaft-abs(412px, 381px, 0, 0);
-                @include image-background('../images/leaf-1.png')
-            }
-
-            &::after {
-                @include befaft-abs(388px, 295px, unset, unset);
-                right: 0;
-                bottom: 0;
-                @include image-background('../images/leaf-2.png');
-            }
-        }
-
         &-detail {
             padding-top: 120px !important;
 
-            .breadcumbs {
+            .breadcrumbs {
                 margin-bottom: 80px;
             }
 

@@ -15,7 +15,7 @@
                         <a class="nav-link" href="?page=products">Produk</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="?page=validation">Periksa Keaslian</a>
+                        <a class="nav-link" href="?page=validator">Periksa Keaslian</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="?page=news">Berita</a>
@@ -24,7 +24,7 @@
                         <a class="nav-link" href="?page=shop">Belanja</a>
                     </li>
                 </ul>
-                <a href="#"><img src="assets/images/logo.svg" alt="logo" srcset="assets/images/logo.png" class="logo d-block"></a>
+                <a href="/"><img src="assets/images/logo.svg" alt="logo" srcset="assets/images/logo.png" class="logo d-block"></a>
                 <div class="d-flex align-items-center">
                     <form class="d-flex search">
                         <input class="form-control me-sm-2" type="text" placeholder="Mau cari apa?">

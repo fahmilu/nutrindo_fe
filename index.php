@@ -17,9 +17,9 @@
     <?php include("partials/header.php");?>
     <div id="content">
         <?php if(!isset($_GET['page'])) : ?>
-        <?php include("partials/home.php"); ?>
+        <?php include("pages/home.php"); ?>
         <?php else: ?>
-            <?php include("partials/". $_GET['page'] .".php"); ?>
+            <?php include("pages/". $_GET['page'] .".php"); ?>
         <?php endif ?>
     </div>
     <?php include("partials/footer.php");?>

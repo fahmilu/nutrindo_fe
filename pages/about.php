@@ -41,6 +41,6 @@
             <p>Hasilnya, PT Natural Nutrindo berhasil mencapai posisi tiga besar di pasar suplemen impor utama (retail apotek modern) dari segi penjualan. Pada tahun 2020, PT Natural Nutrido telah membuka cabang di Surabaya, Bandung, Jogjakarta, Bali, Makassar, Balikpapan, Batam, dan Pekanbaru. Kota-kota ini mewakili kota-kota ekonomi utama di Indonesia, melayani semua pulau di Nusantara. Peningkatan kegiatan operasional ke wilayah provinsi ini juga menyoroti tren perluasan pasar sasaran baru-baru ini ke dalam indeks konsumen kelas B hingga C. Merupakan kehormatan bagi kami untuk dapat melayani konsumen Indonesia dengan menyediakan suplemen makanan berkualitas tinggi. Apakah Anda memiliki Wellness di dalam diri Anda?</p>
         </div>
     </section>
-    <?php include("components/testimonial.php"); ?>
+    <?php include("./components/testimonial.php"); ?>
 </div>
 <!-- end of about section -->

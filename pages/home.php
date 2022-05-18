@@ -101,8 +101,10 @@
             </div>
         </div>
     </section>
-    <?php include("components/home/product-validation.php"); ?>
-    <?php include("components/home/faq.php"); ?>
-    <?php include("components/home/news.php"); ?>
+    <?php include("./components/home/product-validator.php"); ?>
+    <?php include("./components/home/faq.php"); ?>
+    <?php include("./components/home/news.php"); ?>
+
+    <?php include("./components/modals/validator.php"); ?>
 </div>
 <!-- end of home section -->

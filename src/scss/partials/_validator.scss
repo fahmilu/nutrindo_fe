@@ -1,0 +1,124 @@
+// shop layout
+
+#validator-sections {
+    .product-validator {
+        @include image-background("../images/bg/hero-product.jpg");
+        padding-top: 120px !important;
+        padding-bottom: 230px;
+
+        .validator {
+            margin-top: 30px;
+            > div {
+                padding: 0 80px;
+                > div {
+                    &:first-child {
+                        width: calc(100% - 400px);
+                        padding: 0;
+                        h1 {
+                            font-weight: 700;
+                            font-size: 3.5556rem;
+                            line-height: 4.2778rem;
+                            letter-spacing: unset;
+                            color: $dark-pink;
+                        }
+
+                        h3 {
+                            font-weight: 600;
+                            font-size: 1.3333rem;
+                            line-height: 1.6111rem;
+                            margin-bottom: 60px;
+                            letter-spacing: unset;
+                        }
+                        p {
+                            color: $dark-pink;
+                            margin-bottom: 2rem;
+                        }
+                    }
+                    &:last-child {
+                        width: 400px;
+    
+                        img {
+                            display: block;
+                        }
+                    }
+                }
+            }
+    
+
+        }
+    }
+}
+
+.modal-validator {
+    .modal {
+
+        &-dialog {
+            max-width: 600px;
+        }
+
+        &-content {
+            border-radius: 0;
+            background: white;
+            box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            position: relative;
+
+            form {
+                input {
+                    border: 1px solid #BE2B64;
+                    border-radius: 4px;
+                    width: 100%;
+                    max-width: 300px;
+                    margin: 26px auto 30px;
+                    padding: 15px 24px;
+                    color: #979797;
+                    outline: unset;
+
+                }
+  
+                ::placeholder {
+                    color: #979797;
+                }
+            }
+        }
+
+        &-close {
+            display: block;
+            @include watermark('../images/icons/close-modal.svg', 68px, 68px);
+            position: absolute;
+            top: -34px;
+            right: -34px;
+        }
+
+        &-header {
+            min-height: 60px;
+            background: #F2D9E7;
+            box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+            border-radius: 8px 8px 0px 0px;
+            padding: 30px 0;
+
+            img {
+                margin: 0 auto;
+                box-shadow: 0px 10px 30px rgba(190, 43, 100, 0.56);
+                display: block;
+                width: 72px;
+                border-radius: 50%;
+            }
+        }
+
+        &-body {
+            padding: 42px 76px 27px;
+            
+            p {
+                margin-bottom: 30px;
+            }
+
+            img {
+                margin: 26px auto;
+                display: block;
+                width: 170px;
+                filter: drop-shadow(95.9999px 108.669px 80px rgba(0, 0, 0, 0.1)) drop-shadow(62.2222px 70.4338px 46.8519px rgba(0, 0, 0, 0.0759259)) drop-shadow(36.9777px 41.8578px 25.4815px rgba(0, 0, 0, 0.0607407)) drop-shadow(19.2px 21.7339px 13px rgba(0, 0, 0, 0.05)) drop-shadow(7.82222px 8.85454px 6.51852px rgba(0, 0, 0, 0.0392593)) drop-shadow(1.77778px 2.01239px 3.14815px rgba(0, 0, 0, 0.0240741));
+            }
+        }
+    }
+}

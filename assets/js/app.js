@@ -3222,6 +3222,10 @@ __webpack_require__(/*! ./partials/home.js */ "./src/js/partials/home.js");
 
 __webpack_require__(/*! ./partials/shop.js */ "./src/js/partials/shop.js");
 
+__webpack_require__(/*! ./partials/news.js */ "./src/js/partials/news.js");
+
+__webpack_require__(/*! ./partials/validator.js */ "./src/js/partials/validator.js");
+
 __webpack_require__(/*! ./components/testimonial.js */ "./src/js/components/testimonial.js");
 
 /***/ }),
@@ -3509,6 +3513,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /***/ }),
 
+/***/ "./src/js/partials/news.js":
+/*!*********************************!*\
+  !*** ./src/js/partials/news.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+ // product carousel
+
+document.addEventListener("DOMContentLoaded", function () {
+  var $newsSlider = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#news-sections .news-banner .news-carousel');
+  $newsSlider.slick({
+    arrows: true,
+    dots: true
+  });
+});
+
+/***/ }),
+
 /***/ "./src/js/partials/shop.js":
 /*!*********************************!*\
   !*** ./src/js/partials/shop.js ***!
@@ -3546,6 +3572,46 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     updateStoreList();
+  });
+});
+
+/***/ }),
+
+/***/ "./src/js/partials/validator.js":
+/*!**************************************!*\
+  !*** ./src/js/partials/validator.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.esm.js");
+
+
+var $formValidator = jquery__WEBPACK_IMPORTED_MODULE_0___default()('form.form-validator'),
+    $emailModal = new bootstrap__WEBPACK_IMPORTED_MODULE_1__.Modal(document.getElementById('submitEmail')),
+    $successModal = new bootstrap__WEBPACK_IMPORTED_MODULE_1__.Modal(document.getElementById('successModal')),
+    $failedModal = new bootstrap__WEBPACK_IMPORTED_MODULE_1__.Modal(document.getElementById('failedModal'));
+document.addEventListener("DOMContentLoaded", function () {
+  $formValidator.submit(function (e) {
+    e.preventDefault();
+    $emailModal.show();
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('body').on('submit', '#submitEmail form.submit-email', function (e) {
+    e.preventDefault();
+    $emailModal.hide();
+    var email = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#submitEmail form.submit-email input').val();
+
+    if (email !== '') {
+      $successModal.show();
+    } else {
+      $failedModal.show();
+    }
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('body').on('click', '.modal-validator .retry', function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('form.form-validator input,  form.submit-email input').val('');
   });
 });
 

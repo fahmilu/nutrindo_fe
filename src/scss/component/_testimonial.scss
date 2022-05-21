@@ -116,29 +116,4 @@
         margin-bottom: 8px;
     }
 
-    .ratings {
-        display: flex;
-        justify-content: center;
-        gap: 4px;
-
-        .star {
-            height: 28px;
-            width: 28px;
-            background: url(../images/icons/star-unfill.svg);
-            background-size: auto 100%;
-            background-position: left center;
-            position: relative;
-
-            .fill {
-                width: calc(28px * var(--star-width));
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                background: url(../images/icons/star.svg);
-                background-size: auto 100%;
-                background-position: left center;
-            }
-        }
-    }
 }

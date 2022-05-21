@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
         slidesToScroll: 1,
     });
 
-    $('.slider-testimonial .ratings').each(function (index, element) {
+    $('.ratings').each(function (index, element) {
         const $dataRating = $(this).data('rating');
         const $dataRatingFloor = Math.floor($dataRating);
 

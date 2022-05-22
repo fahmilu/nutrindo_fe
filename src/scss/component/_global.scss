@@ -44,16 +44,16 @@ a{
 	position: relative;
 	max-width: 1440px;
 
-	@include breakpoint(768px) {
+	@include media-breakpoint-up(md) {
 		padding: 0px 40px; 
 	}
 
-	@include breakpoint(1280px) {
+	@include media-breakpoint-up(xl) {
 		padding: 0px 80px; 
 	}
 
 	&-180 {
-		@include breakpoint(1280px) {
+		@include media-breakpoint-up(xl) {
 			padding: 0px 180px; 
 		}
 	}

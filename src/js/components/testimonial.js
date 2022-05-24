@@ -5,8 +5,10 @@ const $sliderTestimonial = $('.slider-testimonial');
 document.addEventListener("DOMContentLoaded", function() {
     $sliderTestimonial.slick({
         dots: true,
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
+        appendArrows: '.testimonial .actions',
+        appendDots: '.testimonial .actions',
     });
 
     $('.ratings').each(function (index, element) {

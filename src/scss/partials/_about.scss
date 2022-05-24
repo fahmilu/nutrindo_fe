@@ -14,24 +14,44 @@
         }
 
         h1 {
-            font-weight: 900;
-            font-size: 2.2222rem;
-            line-height: 56px;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 29px;
+            @include media-breakpoint-up(md) {
+                font-weight: 900;
+                font-size: 2.2222rem;
+                line-height: 56px;
+            }
         }
 
         h3 {
-            font-weight: 600;
-            font-size: 1.7778rem;
-            line-height: 2.3333rem;
-            margin-bottom: 50px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 24px;
+
+            @include media-breakpoint-up(md) {
+                font-weight: 600;
+                font-size: 1.7778rem;
+                line-height: 2.3333rem;
+                margin-bottom: 50px;
+            }
         }
 
         .img-rounded {
-            @include create-circle(460px);
+            @include create-circle(280px);
             display: block;
             position: relative;
             overflow: hidden;
+            margin: 40px auto 40px;
 
+            @include media-breakpoint-up(md) {
+                @include create-circle(460px);
+            }
+
+            @include media-breakpoint-up(lg) {
+                margin: 0;
+            }
             img {
                 @include center-abs;
                 object-fit: cover;
@@ -74,7 +94,12 @@
         }
 
         .container {
-            padding: 90px 0 130px;
+            padding: 90px 20px 130px;
+            
+            @include media-breakpoint-up(md) {
+                padding: 90px 0 130px;
+            }
+
         }
     }
 }

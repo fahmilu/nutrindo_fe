@@ -1,9 +1,8 @@
 <section class="faq">
     <div class="container">
-        <div class="d-md-flex">
-            <div class="faq-image">
-                <img src="assets/images/faq.svg" alt="" />
-                <div class="note text-dark-pink">Jangan ragu untuk menghubungi kami di <a href="mailto:custservice.nutrindo.com" class=" text-dark-pink text-decoration-underline">custservice.nutrindo.com</a> jika Anda merasa masih memiliki pertanyaan yang belum terjawab.</div>
+        <div class="d-lg-flex">
+            <div class="faq-image mx-auto">
+                <img src="assets/images/faq.svg" alt="" class="mx-auto mb-5 mb-lg-0" />
             </div>
             <div class="faqs flex-grow-1">
                 <div class="faq-item">
@@ -103,6 +102,7 @@
                     </div>
                 </div>
             </div>
+            <div class="d-lg-none d-block note text-dark-pink">Jangan ragu untuk menghubungi kami di <a href="mailto:custservice.nutrindo.com" class=" text-dark-pink text-decoration-underline">custservice.nutrindo.com</a> jika Anda merasa masih memiliki pertanyaan yang belum terjawab.</div>
         </div>
     </div>
 </section>

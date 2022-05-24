@@ -1,7 +1,7 @@
 <!-- this is footer section -->
 <footer>
     <div class="container">
-        <div class="content d-flex justify-content-between">
+        <div class="content d-md-flex justify-content-md-between">
             <div class="contact-us">
                 <h3>Hubungi Kami</h3>
                 <div>
@@ -36,7 +36,7 @@
                 </div>
             </div>
             <div class="footer">
-                <a href="">
+                <a href="/">
                     <img src="assets/images/logo-white.svg" class="logo" alt="" srcset="assets/images/logo-white.png" />
                 </a>
 

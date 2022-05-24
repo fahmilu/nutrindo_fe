@@ -10,15 +10,14 @@
             </div> 
         </div>
     </section>
-    <section class="news-list">
+    <section class="news-list by-category">
         <div class="container">
             <div class="d-flex justify-content-between category-title align-items-center">
                 <h2 class="text-dark-pink">Kecantikan</h2>
-                <a href="?page=news-by-category" class="see-more">Lihat selengkapnya</a>
             </div>
             <div class="row">
                 <?php for ($i=0; $i < 2; $i++): ?>
-                <div class="col-md-4">
+                <div class="col-sm-6 col-md-4">
                     <a href="?page=news-detail" class="news-item">
                         <img src="assets/images/dummy/news/1.png" alt="" />
                         <div class="caption text-dark-pink">
@@ -28,7 +27,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-6 col-md-4">
                     <a href="?page=news-detail" class="news-item">
                         <img src="assets/images/dummy/news/2.png" alt="" />
                         <div class="caption text-dark-pink">
@@ -38,7 +37,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-6 col-md-4">
                     <a href="?page=news-detail" class="news-item">
                         <img src="assets/images/dummy/news/3.png" alt="" />
                         <div class="caption text-dark-pink">

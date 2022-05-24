@@ -22,7 +22,7 @@ section{
 }
 
 #content{
-	// overflow-x: hidden;
+	overflow-x: hidden;
 	position: relative;
 	
 	> div section:first-of-type {
@@ -35,16 +35,13 @@ a{
 	text-decoration: none;
 }
 
-
-
-
 .container{
 	width: 100%;
 	padding: 0px 20px; 
 	position: relative;
 	max-width: 1440px;
 
-	@include media-breakpoint-up(md) {
+	@include media-breakpoint-up(lg) {
 		padding: 0px 40px; 
 	}
 
@@ -75,7 +72,12 @@ a{
 
 .breadcrumbs {
 	display: flex;
-	padding: 60px 0 0;
+	padding: 30px 0 0;
+	
+	@include media-breakpoint-up(lg) {
+		padding: 60px 0 0;
+	}
+
 	> * {
 		display: block;
 		margin-right: 8px;
@@ -180,11 +182,14 @@ a{
 			border: 2px solid $dark-pink;
 			border-radius: 8px;
 			box-sizing: border-box;
-			width: 340px;
+			width: 100%;
 			padding: 10px 16px 10px 10px;
 			display: flex;
 			align-items: center;
-
+			
+			@include media-breakpoint-up(md) {
+				width: 340px;
+			}
 			input {
 				padding: 0;
 				border: none;
@@ -243,18 +248,49 @@ a{
 		> div {
 			> div {
 				&:first-child {
-					width: calc(100% - 550px);
-
-					padding: 0 120px 0 80px;
+					padding-top: 50px;
+					padding-bottom: 60px;
+					@include media-breakpoint-up(lg) {
+						width: calc(100% - 550px);
+						padding: 0 120px 0 80px;
+					}
+					
 					h2,
 					p {
 						color: $dark-pink;
 						margin-bottom: 2rem;
 					}
+
+					h1 {
+						font-weight: 600;
+						@include media-breakpoint-down(md) {
+							font-weight: 800;
+							font-size: 24px;
+							line-height: 29px;
+							margin-bottom: 8px;
+						}
+					}
+
+					h3 {
+						
+						@include media-breakpoint-down(md) {
+							letter-spacing: unset;
+							margin-bottom: 15px;
+							font-weight: 600;
+							font-size: 14px;
+							line-height: 140%;
+
+							br {
+								display: none;
+							}
+						}
+
+					}
 				}
 				&:last-child {
-					width: 550px;
-
+					@include media-breakpoint-up(lg) {
+						width: 550px;
+					}
 					img {
 						display: block;
 					}
@@ -263,8 +299,11 @@ a{
 		}
 
 		form {
-			margin: 60px 0 42px;
+			margin: 24px 0 42px;
 			width: auto;
+			@include media-breakpoint-up(lg) {
+				margin: 60px 0 42px;
+			}
 
 			.info {
 				position: relative;
@@ -274,66 +313,122 @@ a{
 
 				&:after {
 					content: '';
-					width: 160%;
+					width: 0;
 					height: 1px;
 					background-color: $dark-pink;
 					position: absolute;
 					top: 50%;
 					right: -20px;
 					transform: translate(100%, -50%);
+					
+					@include breakpoint(992px) {
+						width: 40%;
+					}
+					
+					@include breakpoint(1280px) {
+						width: 80%;
+					}
+					
+					@include breakpoint(1366px) {
+						width: 100%;
+					}
+					
+					@include breakpoint(1440px) {
+						width: 130%;
+					}
 				}
+
 			}
 			
 			::-webkit-input-placeholder {
 				/* Chrome/Opera/Safari */
-				color: $dark;
+				color: #979797;
 			}
 			::-moz-placeholder {
 				/* Firefox 19+ */
-				color: $dark;
+				color: #979797;
 			}
 			:-ms-input-placeholder {
 				/* IE 10+ */
-				color: $dark;
+				color: #979797;
 			}
 			:-moz-placeholder {
 				/* Firefox 18- */
-				color: $dark;
+				color: #979797;
 			}
 
 			input {
 				display: block;
 				background: white;
-				margin: 16px 0 36px;
+				margin: 16px 0;
 				max-width: 350px;
 				padding: 16px 24px;
-				color: $dark;
 				width: 100%;
 				border: 1px solid $dark-pink;
 				border-radius: 4px;
+				font-weight: 700;
+				color: #505050;
+				outline: none;
+				&:focus {
+					border-color: #505050;
+				}
+				@include media-breakpoint-up(md) {
+					margin: 16px 0 36px;
+				}
+
+				@include media-breakpoint-down(md) {
+					font-size: 18px;
+					line-height: 22px;
+				}
+
 			}
 		}
 
 		.notes {
 			font-size: 10px;
 			line-height: 20px;
+
+			@include media-breakpoint-down(md) {
+				br {
+					display: none;
+				}
+			}
 		}
 	}
 }
 
 .bottom-leafs {
-	height: 412px;
+	height: 136px;
+	margin-top: -50px;
+	
+	@include media-breakpoint-up(md) {
+		height: 412px;
+		margin-top: 0;
+	}
+
 
 	&::before {
-		@include befaft-abs(412px, 381px, 0, 0);
-		@include image-background('../images/leaf-1.png')
+		@include befaft-abs(97px, 126px, 0, unset);
+		@include image-background('../images/leaf-1.png');
+		bottom: 0;
+		@include media-breakpoint-up(md) {
+			width: 412px;
+			height: 381px;
+		}
+		z-index: -1;
 	}
 
 	&::after {
-		@include befaft-abs(388px, 295px, unset, unset);
+		@include befaft-abs(134px, 136px, unset, unset);
 		right: 0;
 		bottom: 0;
 		@include image-background('../images/leaf-2.png');
+
+		@include media-breakpoint-up(md) {
+			width: 388px;
+			height: 295px;
+		}
+		z-index: -1;
 	}
 }
 
@@ -370,67 +465,130 @@ a{
 
 .form-default {
 	.form-group {
-		margin-bottom: 36px;
+		margin-bottom: 26px;
+		@include media-breakpoint-up(sm) {
+			margin-bottom: 36px;
+		}
 
 		label {
-			font-weight: 600;
-			font-size: 24px;
-			line-height: 34px;
-			letter-spacing: -0.019em;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 25px;
 			margin-bottom: 10px;
+			letter-spacing: -0.019em;
 			display: block;
 			color: $dark-pink;
+			
+			@include media-breakpoint-up(sm) {
+				font-weight: 600;
+				font-size: 24px;
+				line-height: 34px;
+			}
+			
 		}
 
 		textarea,
 		input {
 			padding: 10px;
 			font-weight: 400;
-			font-size: 18px;
-			line-height: 25px;
-			/* identical to box height, or 139% */
+			font-size: 14px;
+			line-height: 20px;
 			letter-spacing: -0.014em;
-			color: #979797;
 			padding: 10px;
 			border: 1px solid #BE2B64;
 			border-radius: 8px;
 			width: 100%;
 			outline: none;
+			color: #505050;
+			outline: none;
+			@include media-breakpoint-up(sm) {
+				font-size: 18px;
+				line-height: 25px;
+			}
+			&:focus {
+				border-color: #505050;
+			}
 		}
 
-		::placeholder {
+		::-webkit-input-placeholder {
+			/* Chrome/Opera/Safari */
 			color: #979797;
 		}
+		::-moz-placeholder {
+			/* Firefox 19+ */
+			color: #979797;
+		}
+		:-ms-input-placeholder {
+			/* IE 10+ */
+			color: #979797;
+		}
+		:-moz-placeholder {
+			/* Firefox 18- */
+			color: #979797;
+		}
+	
 	}
 }
 
 .faqs {
 	.faq-item {
 		margin-bottom: 24px;
-		border: 1px solid $dark-pink;
-		border-radius: 4px 5px 5px 4px;
+
 		position: relative;
 		background-color: white;
-		padding-left: 40px;
+		padding-left: 10px;
+		border: 0.515254px solid rgba(190, 43, 100, 0.6);
+		border-radius: 2.57627px 3.22034px 3.22034px 2.57627px;		
+		@include media-breakpoint-up(md) {
+			padding-left: 40px;
+			border: 1px solid $dark-pink;
+			border-radius: 4px 5px 5px 4px;
+		}
 
 		&::before {
-			@include befaft-abs(4px, 100%, 0, 0);
+			@include befaft-abs(2px, 100%, 0, 0);
 			background-color: $dark-pink;
+
+			@include media-breakpoint-up(md) {
+				width: 4px;
+			}
+
 		}
 
-		&::after {
-			@include befaft-abs(20px, 12px, 20px, unset);
-			@include image-background('../images/icons/chevron-down.svg');
-			right: 40px;
-		}
 
 		a[data-bs-toggle="collapse"] {
 			display: block;
-			padding: 9px 80px 9px 0px;
 			color: $dark-pink;
 			font-weight: 600;
-			font-size: 24px;
-			line-height: 34px;
+			padding: 5px 45px 5px 0px;
+			font-size: 16px;
+			line-height: 19px;
+			position: relative;
+
+			&::after {
+				@include befaft-abs(12px, 8px, 10px, unset);
+				@include image-background('../images/icons/chevron-down.svg');
+				right: 10px;
+				@include animation(.25s);
+				
+				@include media-breakpoint-up(md) {
+					width: 20px;
+					height: 12px;
+					right: 40px;
+					top: 20px;
+				}	
+
+			}
+
+			&[aria-expanded='true']:after {
+				transform: rotate(180deg);
+			}
+
+			@include media-breakpoint-up(md) {
+				padding: 9px 80px 9px 0px;
+				font-size: 24px;
+				line-height: 34px;
+			}
 		}
 
 		.content {
@@ -544,6 +702,33 @@ a{
 			.fill {
 				width: calc(15px * var(--star-width));
 			}
+		}
+	}
+}
+
+form {
+	::-webkit-input-placeholder {
+		/* Chrome/Opera/Safari */
+		color: #979797;
+	}
+	::-moz-placeholder {
+		/* Firefox 19+ */
+		color: #979797;
+	}
+	:-ms-input-placeholder {
+		/* IE 10+ */
+		color: #979797;
+	}
+	:-moz-placeholder {
+		/* Firefox 18- */
+		color: #979797;
+	}
+
+	input {
+		color: #505050;
+		outline: none;
+		&:focus {
+			border-color: #505050;
 		}
 	}
 }

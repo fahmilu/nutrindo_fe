@@ -11,9 +11,9 @@
             <div class="news-carousel">
                 <?php for ($i=1; $i < 4; $i++) : ?>
                     <div>
-                        <div class="d-md-flex list">
+                        <div class="d-lg-flex list">
                             <div class="flex-shrink-0 img-area">
-                                <img src="assets/images/dummy/news/<?php echo $i ?>.png" alt=""  />
+                                <img src="assets/images/dummy/news/<?php echo $i ?>.png" alt="" class="img-fluid"  />
                             </div>
                             <div class="content flex-grow-0">
                                 <h2 class="text-dark-pink">Mengapa minuman kemasan lebih baik?</h2>
@@ -53,120 +53,129 @@
         <div class="container">
             <div class="d-flex justify-content-between category-title align-items-center">
                 <h2 class="text-dark-pink">Berita Terbaru dan Update</h2>
-                <a href="?page=news-by-category" class="see-more">Lihat selengkapnya</a>
+                <a href="?page=news-by-category" class="d-none d-md-block see-more">Lihat selengkapnya</a>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="?page=news-detail" class="news-item">
-                        <img src="assets/images/dummy/news/1.png" alt="" />
-                        <div class="caption text-dark-pink">
-                            <h4>Healthy Habits That Makes You</h4>
-                            <h5>Our way of dealing with the uncertain future of Indonesia. Lets go</h5>
-                            <span>Lanjut Baca ></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="?page=news-detail" class="news-item">
-                        <img src="assets/images/dummy/news/2.png" alt="" />
-                        <div class="caption text-dark-pink">
-                            <h4>The Only Meditation That Matters</h4>
-                            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla mi vestibulum sed.</h5>
-                            <span>Lanjut Baca ></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="?page=news-detail" class="news-item">
-                        <img src="assets/images/dummy/news/3.png" alt="" />
-                        <div class="caption text-dark-pink">
-                            <h4>Rise Up</h4>
-                            <h5>Lorem ipsum Doloriposom.</h5>
-                            <span>Lanjut Baca ></span>
-                        </div>
-                    </a>
+            <div class="content">
+                <div class="row">
+                    <div class="col-4">
+                        <a href="?page=news-detail" class="news-item">
+                            <img src="assets/images/dummy/news/1.png" alt="" />
+                            <div class="caption text-dark-pink">
+                                <h4>Healthy Habits That Makes You</h4>
+                                <h5>Our way of dealing with the uncertain future of Indonesia. Lets go</h5>
+                                <span>Lanjut Baca ></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="?page=news-detail" class="news-item">
+                            <img src="assets/images/dummy/news/2.png" alt="" />
+                            <div class="caption text-dark-pink">
+                                <h4>The Only Meditation That Matters</h4>
+                                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla mi vestibulum sed.</h5>
+                                <span>Lanjut Baca ></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="?page=news-detail" class="news-item">
+                            <img src="assets/images/dummy/news/3.png" alt="" />
+                            <div class="caption text-dark-pink">
+                                <h4>Rise Up</h4>
+                                <h5>Lorem ipsum Doloriposom.</h5>
+                                <span>Lanjut Baca ></span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
+            <a href="?page=news-by-category" class="d-md-none mt-3 d-inline-block see-more">Lihat selengkapnya</a>
         </div>
     </section>
     <section class="news-list">
         <div class="container">
             <div class="d-flex justify-content-between category-title align-items-center">
                 <h2 class="text-dark-pink">Kesehatan</h2>
-                <a href="?page=news-by-category" class="see-more">Lihat selengkapnya</a>
+                <a href="?page=news-by-category" class="see-more d-none d-md-block">Lihat selengkapnya</a>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="?page=news-detail" class="news-item">
-                        <img src="assets/images/dummy/news/1.png" alt="" />
-                        <div class="caption text-dark-pink">
-                            <h4>Healthy Habits That Makes You</h4>
-                            <h5>Our way of dealing with the uncertain future of Indonesia. Lets go</h5>
-                            <span>Lanjut Baca ></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="?page=news-detail" class="news-item">
-                        <img src="assets/images/dummy/news/2.png" alt="" />
-                        <div class="caption text-dark-pink">
-                            <h4>The Only Meditation That Matters</h4>
-                            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla mi vestibulum sed.</h5>
-                            <span>Lanjut Baca ></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="?page=news-detail" class="news-item">
-                        <img src="assets/images/dummy/news/3.png" alt="" />
-                        <div class="caption text-dark-pink">
-                            <h4>Rise Up</h4>
-                            <h5>Lorem ipsum Doloriposom.</h5>
-                            <span>Lanjut Baca ></span>
-                        </div>
-                    </a>
+            <div class="content">
+                <div class="row">
+                    <div class="col-4">
+                        <a href="?page=news-detail" class="news-item">
+                            <img src="assets/images/dummy/news/1.png" alt="" />
+                            <div class="caption text-dark-pink">
+                                <h4>Healthy Habits That Makes You</h4>
+                                <h5>Our way of dealing with the uncertain future of Indonesia. Lets go</h5>
+                                <span>Lanjut Baca ></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="?page=news-detail" class="news-item">
+                            <img src="assets/images/dummy/news/2.png" alt="" />
+                            <div class="caption text-dark-pink">
+                                <h4>The Only Meditation That Matters</h4>
+                                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla mi vestibulum sed.</h5>
+                                <span>Lanjut Baca ></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="?page=news-detail" class="news-item">
+                            <img src="assets/images/dummy/news/3.png" alt="" />
+                            <div class="caption text-dark-pink">
+                                <h4>Rise Up</h4>
+                                <h5>Lorem ipsum Doloriposom.</h5>
+                                <span>Lanjut Baca ></span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
+            <a href="?page=news-by-category" class="d-md-none mt-3 d-inline-block see-more">Lihat selengkapnya</a>
         </div>
     </section>
     <section class="news-list">
         <div class="container">
             <div class="d-flex justify-content-between category-title align-items-center">
                 <h2 class="text-dark-pink">Kecantikan</h2>
-                <a href="?page=news-by-category" class="see-more">Lihat selengkapnya</a>
+                <a href="?page=news-by-category" class="see-more d-none d-md-block">Lihat selengkapnya</a>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="?page=news-detail" class="news-item">
-                        <img src="assets/images/dummy/news/1.png" alt="" />
-                        <div class="caption text-dark-pink">
-                            <h4>Healthy Habits That Makes You</h4>
-                            <h5>Our way of dealing with the uncertain future of Indonesia. Lets go</h5>
-                            <span>Lanjut Baca ></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="?page=news-detail" class="news-item">
-                        <img src="assets/images/dummy/news/2.png" alt="" />
-                        <div class="caption text-dark-pink">
-                            <h4>The Only Meditation That Matters</h4>
-                            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla mi vestibulum sed.</h5>
-                            <span>Lanjut Baca ></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="?page=news-detail" class="news-item">
-                        <img src="assets/images/dummy/news/3.png" alt="" />
-                        <div class="caption text-dark-pink">
-                            <h4>Rise Up</h4>
-                            <h5>Lorem ipsum Doloriposom.</h5>
-                            <span>Lanjut Baca ></span>
-                        </div>
-                    </a>
+            <div class="content">
+                <div class="row">
+                    <div class="col-4">
+                        <a href="?page=news-detail" class="news-item">
+                            <img src="assets/images/dummy/news/1.png" alt="" />
+                            <div class="caption text-dark-pink">
+                                <h4>Healthy Habits That Makes You</h4>
+                                <h5>Our way of dealing with the uncertain future of Indonesia. Lets go</h5>
+                                <span>Lanjut Baca ></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="?page=news-detail" class="news-item">
+                            <img src="assets/images/dummy/news/2.png" alt="" />
+                            <div class="caption text-dark-pink">
+                                <h4>The Only Meditation That Matters</h4>
+                                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla mi vestibulum sed.</h5>
+                                <span>Lanjut Baca ></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="?page=news-detail" class="news-item">
+                            <img src="assets/images/dummy/news/3.png" alt="" />
+                            <div class="caption text-dark-pink">
+                                <h4>Rise Up</h4>
+                                <h5>Lorem ipsum Doloriposom.</h5>
+                                <span>Lanjut Baca ></span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
+            <a href="?page=news-by-category" class="d-md-none mt-3 d-inline-block see-more">Lihat selengkapnya</a>
         </div>
     </section>
     <section class="bottom-leafs"></section>

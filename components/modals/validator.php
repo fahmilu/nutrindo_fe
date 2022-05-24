@@ -26,7 +26,7 @@
                 <img src="assets/images/icons/success.svg" alt="">
             </div>
             <div class="modal-body text-center">
-                <h4>Produkmu adalah</h4>
+                <h4 class="text-dark-pink">Produkmu adalah</h4>
                 <h3 class="text-dark-pink">Wellness Omega Lotes LIKI-WELL (60)</h3>
                 <img src="assets/images/products/dummy-2.png" alt="" />
                 <p>Tanggal Kadaluarsa : 15 Nov 2025</p>

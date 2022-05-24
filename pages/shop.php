@@ -16,13 +16,13 @@
                         <h2 class="text-dark-pink">Toko Online</h2>
                     </div>
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-6 col-md-4">
                             <a href="" target="_blank" class="logo"><img src="assets/images/logo/tokped.png" alt="" srcset=""></a>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-6 col-md-4">
                             <a href="" target="_blank" class="logo"><img src="assets/images/logo/shopee.png" alt="" srcset=""></a>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-6 col-md-4">
                             <a href="" target="_blank" class="logo"><img src="assets/images/logo/natural-farm.png" alt="" srcset=""></a>
                         </div>
                     </div>
@@ -33,25 +33,25 @@
                         <h2 class="text-dark-pink">Toko Offline</h2>
                     </div>
                     <div class="row offline-store">
-                        <div class="col-md-4">
+                        <div class="col-6 col-md-4">
                             <a href="" target="_blank" class="logo"><img src="assets/images/logo/natural-farm.png" alt="" srcset=""></a>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-6 col-md-4">
                             <a href="" target="_blank" class="logo"><img src="assets/images/logo/watsons.png" alt="" srcset=""></a>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-6 col-md-4">
                             <a href="" target="_blank" class="logo"><img src="assets/images/logo/guardian.png" alt="" srcset=""></a>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-6 col-md-4">
                             <a href="" target="_blank" class="logo"><img src="assets/images/logo/kimia-farma.png" alt="" srcset=""></a>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-6 col-md-4">
                             <a href="" target="_blank" class="logo"><img src="assets/images/logo/boston.png" alt="" srcset=""></a>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-6 col-md-4">
                             <a href="" target="_blank" class="logo"><img src="assets/images/logo/century.png" alt="" srcset=""></a>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-6 col-md-4">
                             <a href="" target="_blank" class="logo"><img src="assets/images/logo/boost.png" alt="" srcset=""></a>
                         </div>
                     </div>
@@ -85,35 +85,37 @@
                         </div>
                     </div>
                 </div>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th class="text-center text-dark-pink">Lokasi</th>
-                            <th class="text-center text-dark-pink">Nama Toko</th>
-                            <th class="text-center text-dark-pink">Telepon</th>
-                            <th class="text-center text-dark-pink">Alamat</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php for ($i=0; $i < 10; $i++) { ?>
+                <div class="table-area">
+                    <table class="table">
+                        <thead>
                             <tr>
-                                <td class="text-dark-pink">
-                                    <div class="d-flex align-items-center">
-                                        <img src="assets/images/icons/shop.png" alt="" />
-                                        <span>JABODETABEK</span>
-                                    </div>
-                                </td>
-                                <td class="text-dark-pink">
-                                    <div class="name">PONDOK INDAH MALL 2</div>
-                                </td>
-                                <td class="text-dark-pink">
-                                    <div class="phone">2175920928</div>
-                                </td>
-                                <td class="text-dark-pink"><div class="address text-left">Pondok Indah Mall 2, Jl. Metro Pondok Indah Kav IV/TA RT.1/RW.16 Pondok Pinang Kebayoran Lama Lantai 2  Unit 238 Jakarta Selatan DKI Jakarta ,12310</div></td>
+                                <th class="text-center text-dark-pink">Lokasi</th>
+                                <th class="text-center text-dark-pink">Nama Toko</th>
+                                <th class="text-center text-dark-pink">Telepon</th>
+                                <th class="text-center text-dark-pink">Alamat</th>
                             </tr>
-                        <?php } ?>
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody>
+                            <?php for ($i=0; $i < 10; $i++) { ?>
+                                <tr>
+                                    <td class="text-dark-pink">
+                                        <div class="d-flex align-items-center">
+                                            <img src="assets/images/icons/shop.png" alt="" />
+                                            <span>JABODETABEK</span>
+                                        </div>
+                                    </td>
+                                    <td class="text-dark-pink">
+                                        <div class="name">PONDOK INDAH MALL 2</div>
+                                    </td>
+                                    <td class="text-dark-pink">
+                                        <div class="phone">2175920928</div>
+                                    </td>
+                                    <td class="text-dark-pink"><div class="address text-left">Pondok Indah Mall 2, Jl. Metro Pondok Indah Kav IV/TA RT.1/RW.16 Pondok Pinang Kebayoran Lama Lantai 2  Unit 238 Jakarta Selatan DKI Jakarta ,12310</div></td>
+                                </tr>
+                            <?php } ?>
+                        </tbody>
+                    </table>
+                </div>
                 <nav aria-label="Page navigation example">
                     <ul class="pagination justify-content-center align-items-center">
                         <li class="page-item"><a class="page-link" href="#">First</a></li>

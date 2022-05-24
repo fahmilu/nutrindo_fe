@@ -43,26 +43,44 @@
                 padding-top: 40px;
 
                 .d-flex {
-                    gap: 40px;
+                    gap: 20px;
+                    @include media-breakpoint-up(md) {
+                        gap: 40px;
+                    }
 
                     .product {
-                        width: 150px;
-                        max-width: 150px;
-                        min-width: 150px;
-                        margin-bottom: 30px;
-        
+                        width: 120px;
+                        max-width: 120px;
+                        min-width: 120px;
+                        margin-bottom: 10px;
+                        @include media-breakpoint-up(md) {
+                            width: 150px;
+                            margin-bottom: 30px;
+                            max-width: 150px;
+                            min-width: 150px;
+                        }
                         .img-area {
                             position: relative;
                             overflow: hidden;
                             background-color: #F2D9E7;
                             border-radius: 50%;
                             aspect-ratio: (150/123);
-                            margin-bottom: 23px;
+                            margin-bottom: 13px;
+                            
+                            @include media-breakpoint-up(md) {
+                                margin-bottom: 23px;
+                            }
+                            
                             img {
                                 @include center-abs;
                                 display: block;
-                                height: 100px;
+                                height: 80px;
                                 filter: drop-shadow(35.8528px 40.5843px 29.8773px rgba(0, 0, 0, 0.1)) drop-shadow(23.2379px 26.3047px 17.4976px rgba(0, 0, 0, 0.0759259)) drop-shadow(13.8099px 15.6325px 9.51648px rgba(0, 0, 0, 0.0607407)) drop-shadow(7.17055px 8.11687px 4.85506px rgba(0, 0, 0, 0.05)) drop-shadow(2.92134px 3.30687px 2.43445px rgba(0, 0, 0, 0.0392593)) drop-shadow(0.66394px 0.751562px 1.17573px rgba(0, 0, 0, 0.0240741));
+
+                                @include media-breakpoint-up(md) {
+                                    height: 100px;
+                                }
+
                             }
                         }
                     }

@@ -61,6 +61,10 @@ p {
 	&:not(:last-child) {
 		margin-bottom: 20px;
 	}
+
+	a {
+		color: #171988;
+	}
 }
 
 .text-dark-pink {

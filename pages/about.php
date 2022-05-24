@@ -2,10 +2,10 @@
 <div id="about-sections">
     <section class="title">
         <div class="container">
-            <div class="d-md-flex align-items-md-center flex-grow-0 gap-100">
+            <div class="d-lg-flex align-items-lg-center flex-grow-0 gap-100">
                 <h1 class="text-dark-pink">Suplemen makanan dengan kualitas terdepan untuk  semua lapisan</h1>
                 <div class="img-rounded flex-shrink-0">
-                    <img src="assets/images/about/img-1.png" alt="" srcset="" />
+                    <img src="assets/images/about/img-1.png" alt="" srcset="" class="img-area" />
                 </div>
             </div>
         </div>
@@ -20,7 +20,7 @@
     </section>
     <section class="manufacture">
         <div class="container">
-            <div class="d-md-flex align-items-md-center flex-grow-0 gap-80">
+            <div class="d-lg-flex align-items-lg-center flex-grow-0 gap-80">
                 <div class="img-rounded flex-shrink-0">
                     <img src="assets/images/about/img-2.png" alt="" srcset="" />
                 </div>

@@ -1,10 +1,10 @@
 // header
 header{
-    position: absolute;
     top: 0;
     z-index: 2;
     width: 100%;
-
+    position: absolute;
+    
     &.scrolling {
         .navbar {
             background-color: white;
@@ -37,7 +37,7 @@ header{
                 max-width: 1440px;
                 padding: 18px 48px;
             }
-    
+            
             .logo {
                 width: auto;
                 height: 70px;
@@ -45,6 +45,29 @@ header{
                     width: 190px;
                     height: auto;
                     @include center-abs;
+                }
+            }
+
+            .toggler {
+                background: unset;
+                @include watermark('../images/icons/menu.svg', 42px, 42px);
+                display: block;
+                border: none;
+
+                &[aria-expanded='true'] {
+                    @include image-background('../images/icons/menu-open.svg');
+                }
+            }
+
+            .search-btn {
+                @include watermark('../images/icons/search.svg', 42px, 42px);
+                margin-right: 4px;
+                display: block;
+            }   
+
+            .navbar-content {
+                @include media-breakpoint-down(lg) {
+                    height: 100vh;
                 }
             }
 
@@ -81,6 +104,27 @@ header{
                 }
             }
 
+            .search-area {
+                display: none;
+                @include media-breakpoint-down(lg) {
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    background-color: #fff;
+                    padding: 10px 20px;
+                    transform: translateY(100%);
+                    gap: 10px;
+                    .close-search {
+                        @include watermark('../images/icons/menu-open.svg', 42px, 42px);
+                        
+                    }
+                }
+
+                &.active {
+                    display: flex;
+                }
+            }
             .search {
                 border: 1px solid rgba(190, 43, 100, 0.3);
                 box-sizing: border-box;
@@ -91,6 +135,15 @@ header{
                 @include breakpoint(1280px) {
                     width: 350px;
                 }
+
+                @include media-breakpoint-down(lg) {
+                    width: 100%;
+                    border-radius: 8px;
+                    padding: 4px 16px 4px;
+                    gap: 10px;
+                }
+
+
                 input {
                     padding: 0;
                     border: none;
@@ -112,6 +165,57 @@ header{
                     @include watermark('../images/icons/search.svg', 28px, 28px);
                     font-size: 0;
                     border: none;
+                }
+            }
+        }
+
+        @include media-breakpoint-down(lg) {
+            &-collapse {
+                background-color: #fff;
+                padding: 90px 0 20px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: -1;
+                .nav-item {
+                    padding: 10px 30px;
+                    .nav-link {
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 20px;
+                        
+                        @include media-breakpoint-up(md) {
+                            font-size: 18px;
+                            line-height: 24px;
+                        }
+                    }
+                    &:hover,
+                    &.active {
+                        background-color: $light-pink;
+                    }
+                }
+
+                .change-lang {
+                    margin: 0 30px 20px;
+                    width: 43px;
+                    .label {
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 12px;
+                        line-height: 14px;
+                        color: #BE2B64;
+                    }
+
+                    .switcher {
+                        margin-top: 5px;
+                        @include watermark('../images/icons/lang-switcher.svg', 43px, 17px);
+                        display: block;
+
+                        &[data-lang="EN"] {
+                            transform: rotate(180deg);
+                        }
+                    }
                 }
             }
         }

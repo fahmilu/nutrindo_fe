@@ -331,6 +331,9 @@
 	border: 1px solid #BE2B64;
 	border-radius: 8px;
 	overflow: hidden;
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 150px;
+    }
 
 	&:before {
 		@include befaft-abs(100%, 100%, unset, 0);
@@ -343,6 +346,12 @@
             height: 270px;
             background: linear-gradient(360deg, #FFFFFF 31.21%, rgba(255, 255, 255, 0) 100%);
         }
+
+        @include media-breakpoint-down(md) {
+            height: 183.38px;
+            top: 97.62px;
+        }
+
 	}
 
 	img {
@@ -350,7 +359,11 @@
 		z-index: 0;
 		width: 100%;
 		object-fit: cover;
-		aspect-ratio: (312/426);
+		aspect-ratio: (205/228);
+        
+        @include media-breakpoint-up(sm) {
+            aspect-ratio: (312/426);
+        }
 	}
 
 	.caption {

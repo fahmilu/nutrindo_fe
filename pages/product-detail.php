@@ -6,7 +6,7 @@
                 <span>></span>
                 <span class="active">Omega-3 Banded</span>
             </div>          
-            <div class="content d-md-flex justify-content-md-between">
+            <div class="content d-lg-flex justify-content-lg-between">
                 <div class="left-side">
                     <div class="image-slide">
                         <div class="list">
@@ -44,48 +44,49 @@
                             <div class="text">Tambahan Vitamin E 5 mg untuk menjaga kualitas isi softgel dari kerusakan.</div>
                         </div>
                     </div>
-                    <div class="type">
-                        <div class="title">Daya</div>
-                        <div class="rounded-links d-flex flex-wrap">
-                            <a href="" class="active">
-                                <span>1000 mg</span>
-                            </a>
+                    <div class="d-none d-lg-block">
+                        <div class="type">
+                            <div class="title">Daya</div>
+                            <div class="rounded-links d-flex flex-wrap">
+                                <a href="" class="active">
+                                    <span>1000 mg</span>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="variant">
-                        <div class="title">Varian</div>
-                        <div class="rounded-links d-flex flex-wrap">
-                            <a href="" class="active">
-                                <span>75</span>
-                            </a>
-                            <a href="" class="">
-                                <span>150</span>
-                            </a>
-                            <a href="" class="">
-                                <span>375</span>
-                            </a>
+                        <div class="variant">
+                            <div class="title">Varian</div>
+                            <div class="rounded-links d-flex flex-wrap">
+                                <a href="" class="active">
+                                    <span>75</span>
+                                </a>
+                                <a href="" class="">
+                                    <span>150</span>
+                                </a>
+                                <a href="" class="">
+                                    <span>375</span>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="btn-area d-flex justify-content-center">
-                        <a href="" class="transparent">Formula produk lain</a>
-                        <div class="dropdown open">
-                            <a class="btn-default  dropdown-toggle d-block" id="olstoreLinks" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Beli Product ini
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="olstoreLinks">
-                                <a href="" class="d-flex justify-content-between">
-                                    <span class="text-dark-pink">Beli dari</span>
-                                    <img src="assets/images/logo/shopee.png" alt="">
+                        <div class="btn-area d-flex justify-content-center">
+                            <a href="" class="transparent">Formula produk lain</a>
+                            <div class="dropdown open">
+                                <a class="btn-default  dropdown-toggle d-block" id="olstoreLinks" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Beli Product ini
                                 </a>
-                                <a href="" class="d-flex justify-content-between">
-                                    <span class="text-dark-pink">Beli dari</span>
-                                    <img src="assets/images/logo/tokped.png" alt="">
-                                </a>
-                                <a href="" class="d-flex justify-content-between">
-                                    <span class="text-dark-pink">Beli dari</span>
-                                    <img src="assets/images/logo/natural-farm.png" alt="">
-                                </a>
+                                <div class="dropdown-menu" aria-labelledby="olstoreLinks">
+                                    <a href="" class="d-flex justify-content-between">
+                                        <span class="text-dark-pink">Beli dari</span>
+                                        <img src="assets/images/logo/shopee.png" alt="">
+                                    </a>
+                                    <a href="" class="d-flex justify-content-between">
+                                        <span class="text-dark-pink">Beli dari</span>
+                                        <img src="assets/images/logo/tokped.png" alt="">
+                                    </a>
+                                    <a href="" class="d-flex justify-content-between">
+                                        <span class="text-dark-pink">Beli dari</span>
+                                        <img src="assets/images/logo/natural-farm.png" alt="">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -145,6 +146,53 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="left-side d-block d-lg-none">
+                    <div class="type">
+                        <div class="title">Daya</div>
+                        <div class="rounded-links d-flex flex-wrap">
+                            <a href="" class="active">
+                                <span>1000 mg</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="variant">
+                        <div class="title">Varian</div>
+                        <div class="rounded-links d-flex flex-wrap">
+                            <a href="" class="active">
+                                <span>75</span>
+                            </a>
+                            <a href="" class="">
+                                <span>150</span>
+                            </a>
+                            <a href="" class="">
+                                <span>375</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="btn-area d-sm-flex justify-content-sm-center">
+                        <a href="" class="transparent d-block mb-3 mb-sm-0">Formula produk lain</a>
+                        <div class="dropdown open">
+                            <a class="btn-default  dropdown-toggle d-block" id="olstoreLinks" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Beli Product ini
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="olstoreLinks">
+                                <a href="" class="d-flex justify-content-between">
+                                    <span class="text-dark-pink">Beli dari</span>
+                                    <img src="assets/images/logo/shopee.png" alt="">
+                                </a>
+                                <a href="" class="d-flex justify-content-between">
+                                    <span class="text-dark-pink">Beli dari</span>
+                                    <img src="assets/images/logo/tokped.png" alt="">
+                                </a>
+                                <a href="" class="d-flex justify-content-between">
+                                    <span class="text-dark-pink">Beli dari</span>
+                                    <img src="assets/images/logo/natural-farm.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -153,21 +201,21 @@
             <h2 class="text-center text-dark-pink">Siapa yang perlu mengonsumsi Omega-3 Banded?</h2>
             <div class="slider">
                 <div class="list">
-                    <div class="d-flex align-items-center">
-                        <img src="assets/images/dummy/for-who-1.png" alt="" />
-                        <div class="text-dark-pink">Untuk Anda yang ingin menjaga daya tahan tubuh </div>
+                    <div class="d-sm-flex align-items-center">
+                        <img src="assets/images/dummy/for-who-1.png" class="mx-auto mb-3 m-sm-0" alt="" />
+                        <div class="text-dark-pink text-center text-sm-start">Untuk Anda yang ingin menjaga daya tahan tubuh </div>
                     </div>
                 </div>
                 <div class="list">
-                    <div class="d-flex align-items-center">
+                    <div class="d-sm-flex align-items-center">
                         <img src="assets/images/dummy/for-who-2.png" alt="" />
-                        <div class="text-dark-pink">Untuk Anda yang ingin menjaga kesehatan kulit, darah, dan otak.</div>
+                        <div class="text-dark-pink text-center text-sm-start">Untuk Anda yang ingin menjaga kesehatan kulit, darah, dan otak.</div>
                     </div>
                 </div>
                 <div class="list">
-                    <div class="d-flex align-items-center">
+                    <div class="d-sm-flex align-items-center">
                         <img src="assets/images/dummy/for-who-3.png" alt="" />
-                        <div class="text-dark-pink">Untuk Anda yang ingin membantu fertilitas/kesuburan.</div>
+                        <div class="text-dark-pink text-center text-sm-start">Untuk Anda yang ingin membantu fertilitas/kesuburan.</div>
                     </div>
                 </div>
             </div>
@@ -176,34 +224,36 @@
     <section class="related-products">
         <div class="container">
             <h2 class="text-dark-pink">Biasa dibeli bersama produk</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="product">
-                        <h5 class="text-dark-pink">Wellness Formula Multivitamin  & Mineral</h5>
-                        <div class="title">MEGA B COMPLEX</div>
-                        <img src="assets/images/products/dummy-1.png" alt="" />
-                        <div class="btn-area d-flex justify-content-center">
-                            <a href="?page=product-detail">Lihat Selengkapnya</a>
+            <div class="content">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="product">
+                            <h5 class="text-dark-pink">Wellness Formula Multivitamin  & Mineral</h5>
+                            <div class="title">MEGA B COMPLEX</div>
+                            <img src="assets/images/products/dummy-1.png" alt="" />
+                            <div class="btn-area d-flex justify-content-center">
+                                <a href="?page=product-detail">Lihat Selengkapnya</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="product">
-                        <h5 class="text-dark-pink">Wellness Formula Multivitamin  & Mineral</h5>
-                        <div class="title">VITAMIN D3 1000 I.U.</div>
-                        <img src="assets/images/products/dummy-2.png" alt="" />
-                        <div class="btn-area d-flex justify-content-center">
-                            <a href="?page=product-detail">Lihat Selengkapnya</a>
+                    <div class="col-4">
+                        <div class="product">
+                            <h5 class="text-dark-pink">Wellness Formula Multivitamin  & Mineral</h5>
+                            <div class="title">VITAMIN D3 1000 I.U.</div>
+                            <img src="assets/images/products/dummy-2.png" alt="" />
+                            <div class="btn-area d-flex justify-content-center">
+                                <a href="?page=product-detail">Lihat Selengkapnya</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="product">
-                        <h5 class="text-dark-pink">Wellness Formula Minyak Ikan</h5>
-                        <div class="title"> OMEGA-3 FISH OIL 1000 mg (75)</div>
-                        <img src="assets/images/products/dummy-3.png" alt="" />
-                        <div class="btn-area d-flex justify-content-center">
-                            <a href="?page=product-detail">Lihat Selengkapnya</a>
+                    <div class="col-4">
+                        <div class="product">
+                            <h5 class="text-dark-pink">Wellness Formula Minyak Ikan</h5>
+                            <div class="title"> OMEGA-3 FISH OIL 1000 mg (75)</div>
+                            <img src="assets/images/products/dummy-3.png" alt="" />
+                            <div class="btn-area d-flex justify-content-center">
+                                <a href="?page=product-detail">Lihat Selengkapnya</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -213,36 +263,38 @@
     <section class="related-news">
         <div class="container">
             <h2 class="text-dark-pink">Artikel Terkait Kesehatan Anda</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="?page=news-detail" class="news-item">
-                        <img src="assets/images/dummy/news/1.png" alt="" />
-                        <div class="caption text-dark-pink">
-                            <h4>Healthy Habits That Makes You</h4>
-                            <h5>Our way of dealing with the uncertain future of Indonesia. Lets go</h5>
-                            <span>Lanjut Baca ></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="?page=news-detail" class="news-item">
-                        <img src="assets/images/dummy/news/2.png" alt="" />
-                        <div class="caption text-dark-pink">
-                            <h4>The Only Meditation That Matters</h4>
-                            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla mi vestibulum sed.</h5>
-                            <span>Lanjut Baca ></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="?page=news-detail" class="news-item">
-                        <img src="assets/images/dummy/news/3.png" alt="" />
-                        <div class="caption text-dark-pink">
-                            <h4>Rise Up</h4>
-                            <h5>Lorem ipsum Doloriposom.</h5>
-                            <span>Lanjut Baca ></span>
-                        </div>
-                    </a>
+            <div class="content">
+                <div class="row">
+                    <div class="col-4">
+                        <a href="?page=news-detail" class="news-item">
+                            <img src="assets/images/dummy/news/1.png" alt="" />
+                            <div class="caption text-dark-pink">
+                                <h4>Healthy Habits That Makes You</h4>
+                                <h5>Our way of dealing with the uncertain future of Indonesia. Lets go</h5>
+                                <span>Lanjut Baca ></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="?page=news-detail" class="news-item">
+                            <img src="assets/images/dummy/news/2.png" alt="" />
+                            <div class="caption text-dark-pink">
+                                <h4>The Only Meditation That Matters</h4>
+                                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla mi vestibulum sed.</h5>
+                                <span>Lanjut Baca ></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="?page=news-detail" class="news-item">
+                            <img src="assets/images/dummy/news/3.png" alt="" />
+                            <div class="caption text-dark-pink">
+                                <h4>Rise Up</h4>
+                                <h5>Lorem ipsum Doloriposom.</h5>
+                                <span>Lanjut Baca ></span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="btn-area">

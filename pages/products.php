@@ -11,7 +11,7 @@
                     <a href="#" data-bs-toggle="collapse" data-bs-target="#item1" aria-expanded="true" aria-controls="item1">Wellness Women's Formulas</a>
                     <div id="item1" class="collapse show">
                         <div class="content">
-                            <div class="d-flex flex-wrap">
+                            <div class="d-flex flex-md-wrap">
                                 <?php for ($i=0; $i < 4; $i++) : ?>
                                     <a href="?page=product-detail" class="product">
                                         <div class="img-area">
@@ -28,7 +28,7 @@
                     <a href="#" data-bs-toggle="collapse" data-bs-target="#item2" aria-expanded="true" aria-controls="item2">Wellness Multivitamin & Mineral Formulas</a>
                     <div id="item2" class="collapse show">
                         <div class="content">
-                            <div class="d-flex flex-wrap">
+                            <div class="d-flex flex-md-wrap">
                                 <?php for ($i=0; $i < 6; $i++) : ?>
                                     <a href="?page=product-detail" class="product">
                                         <div class="img-area">

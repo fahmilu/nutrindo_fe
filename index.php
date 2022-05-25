@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/main.css?v=1213" />
 </head>
 
 <body>
@@ -23,6 +23,6 @@
         <?php endif ?>
     </div>
     <?php include("partials/footer.php");?>
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/app.js?v=1213"></script>
 </body>
 </html>

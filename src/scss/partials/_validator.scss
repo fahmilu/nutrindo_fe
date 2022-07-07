@@ -98,9 +98,12 @@
                     max-width: 300px;
                     margin: 26px auto 30px;
                     padding: 15px 24px;
-                    color: #979797;
                     outline: unset;
-
+                    color: #505050;
+                    outline: none;
+                    &:focus {
+                        border-color: #505050;
+                    }
                 }
   
                 ::placeholder {

@@ -11,6 +11,9 @@
         }
     }
 
+    .product-index {
+        padding-top: 0 !important;
+    }
     
     .products-accordion {
         margin-top: 30px;
@@ -136,8 +139,12 @@
 
         }
     }
-
+    overflow-x: hidden;
+	position: relative;
+	
+    padding-top: 72px;
     .product-detail {
+        
         .container {
             max-width: 1260px;
         }
@@ -182,6 +189,7 @@
                 background-color: $light-pink;
                 border-radius: 50%;
                 overflow: hidden;
+                isolation: isolate;
                 @include media-breakpoint-up(sm) {
                     max-width: 447px;
                     height: 385px;

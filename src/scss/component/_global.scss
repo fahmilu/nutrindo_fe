@@ -454,10 +454,10 @@ a{
 				margin-bottom: 35px;
 			}
 
-			h2
+			h2,
 			h3,
 			h4 {
-				margin-bottom: 22px;
+				margin-bottom: 12px;
 			}
 		}
 	}
@@ -730,5 +730,14 @@ form {
 		&:focus {
 			border-color: #505050;
 		}
+	}
+}
+
+.not-found {
+	padding: 150px 0 200px;
+
+	@include media-breakpoint-up(sm) {
+		padding: 200px 0 300px;
+
 	}
 }

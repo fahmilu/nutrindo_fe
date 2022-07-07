@@ -100,6 +100,8 @@
             position: relative;
             border-radius: 50%;
             overflow: hidden;
+            isolation: isolate;
+            transform: translateZ(0);
             @include media-breakpoint-down(lg) {
                 margin: 0 auto 20px;
             }
@@ -121,7 +123,7 @@
             margin-left: -250px;
             width: 500px;
             height: 500px;
-
+            @include animation(1s);
             @include media-breakpoint-up(sm) {
                 margin-left: -356px;
                 width: 712px;
@@ -341,7 +343,7 @@
                         
                         @include media-breakpoint-up(sm) {
                             @include image-background("../images/icons/next.svg");
-                            left: 40px;
+                            right: 40px;
                         }
                     }
                 }
@@ -448,11 +450,13 @@
                     border-radius: 6px;
                     padding: 16px 10px;
                     overflow: hidden;
-
+                    padding-top: 90px;
+                    position: relative;
                     @include image-background("/");
                     @include media-breakpoint-up(md) {
                         width: 268px !important;
                         padding: 20px;
+                        padding-top: 130px;
 
                     }
     
@@ -462,10 +466,17 @@
                     }
     
                     h3 {
-                        font-weight: 800px;
+                        font-weight: 800;
+                        position: absolute;
+                        padding: 16px 10px;
+                        top: 0;
+                        left: 0;
                         @include media-breakpoint-up(md) {
                             font-weight: 700;
+                            padding: 20px;
                         }
+
+
 
                     }
     
@@ -477,12 +488,12 @@
                     img {
                         width: 120px;
                         display: block;
-                        margin: 62px auto 38px;
+                        margin: 20px auto 38px;
                         filter: drop-shadow(70.9774px 80.3445px 59.1479px rgba(0, 0, 0, 0.1)) drop-shadow(46.0039px 52.0751px 34.6398px rgba(0, 0, 0, 0.0759259)) drop-shadow(27.3394px 30.9475px 18.8397px rgba(0, 0, 0, 0.0607407)) drop-shadow(14.1955px 16.0689px 9.61153px rgba(0, 0, 0, 0.05)) drop-shadow(5.78334px 6.54659px 4.81946px rgba(0, 0, 0, 0.0392593)) drop-shadow(1.3144px 1.48786px 2.32758px rgba(0, 0, 0, 0.0240741));
 
                         @include media-breakpoint-up(md) {
                             width: 180px;
-                            margin: 62px auto 38px;
+                            margin: 20px auto 38px;
                         }
 
                     }
